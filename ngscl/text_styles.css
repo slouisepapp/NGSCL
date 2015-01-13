@@ -1,0 +1,302 @@
+<style type="text/css">
+<!--
+  .smallertext {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: small;
+    }
+  .titletext {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: large; color: Blue; font-weight: bold;
+    }
+  .headertext {
+    color: Black;
+    }
+  .errortext {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 14px; color: Red; font-weight: bold;
+    }
+  .cautiontext {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 14px; color: Brown; font-weight: bold;
+    }
+  .requiredtext {
+    font-family: Arial, Helvetica, sans-serif; 
+    color: Red; font-weight: bold; font-style: italic; font-size: small;
+    }
+  .smallrequiredtext {
+    font-family: Arial, Helvetica, sans-serif; 
+    color: Red; font-weight: bold; font-style: italic; font-size: 70%;
+    }
+  .updateabletext {
+    font-family: Arial, Helvetica, sans-serif; 
+    color: Green; font-weight: bold; font-style: italic; font-size: small;
+    }
+  .optionaltext {
+    font-family: Arial, Helvetica, sans-serif; 
+    color: Blue; font-weight: bold; font-size: small;
+    }
+  .disabledtext {
+    font-family: Arial, Helvetica, sans-serif; 
+    color: Gray; font-weight: bold; font-size: small;
+    }
+  .displaytext {
+    font-family: Arial, Helvetica, sans-serif; 
+    color: Blue; font-size: small;
+    }
+  .displayareatext {
+    font-family: times, serif;
+    color: Blue; font-size: small;
+    }
+  .buttontext {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: small;
+    }
+  .buttonrow {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: x-small;
+    }
+  .inputtext {
+    background-color:Bisque;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: small;
+    }
+  .inputseriftext {
+    background-color:Bisque;
+    font-family: times, serif;
+    font-size: small;
+    }
+  .inputrow {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: x-small;
+    background-color:Bisque;
+    }
+  .inputdisabledtext {
+    background-color:LightGray;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: small;
+    }
+  ul.ulBullet {
+    font-size: 90%;
+    list-style-type: disc;
+    }
+  table {
+    background-color:#FFF;
+    border-style: solid;
+    border-color: blue
+  }
+  table.nosort thead {
+    color: black;
+    font-weight: bold;
+    cursor: default;
+    background-color:#FFF;
+    border-style: solid;
+    border-color: blue;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 100%;
+  }
+  table.sortable thead {
+    color: blue;
+    font-weight: bold;
+    cursor: default;
+    background-color:#FFF;
+    border-style: solid;
+    border-color: blue;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 75%;
+  }
+  table.tableNoBorder {
+    background-color:#FFF;
+    border-style: none;
+  }
+  th.thFullSizeBlueBorder {
+    background-color:#FFF;
+    border-style: solid;
+    border-color: blue;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; 
+  }
+  th.thBlueBorder {
+    background-color:#FFF;
+    border-style: solid;
+    border-color: blue;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 75%;
+  }
+  th.thNoBorder {
+    background-color:#FFF;
+    border-style: none;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: left;
+  }
+  td.tdPadding {
+    padding: 0px 20px 0px 0px;
+  }
+  td.tdBlueBorder {
+    background-color:#FFF;
+    border-style: solid;
+    border-color: blue;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 75%;
+    color: blue;
+  }
+  td.tdError {
+    background-color:#FFF;
+    border-style: solid;
+    border-color: Red;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; 
+    color: Red;
+    font-size: 75%;
+  }
+  td.tdCaution {
+    background-color:#FFF;
+    border-style: solid;
+    border-color: Blue;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; 
+    color: Brown;
+    font-size: 75%;
+  }
+  th.thSmallerBlueBorder {
+    background-color:#FFF;
+    border-style: solid;
+    border-color: blue;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 70%;
+  }
+  th.thSmallerRedBlueBorder {
+    background-color:#FFF;
+    border-style: solid;
+    border-color: blue;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 70%;
+    color: red;
+  }
+  th.thSmallerGreenBlueBorder {
+    background-color:#FFF;
+    border-style: solid;
+    border-color: blue;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 70%;
+    color: green;
+  }
+  th.sorttable_alpha {
+    text-decoration: underline;
+    border-color: blue;
+    font-weight: bold;
+  }
+  th.sorttable_date {
+    text-decoration: underline;
+    border-color: blue;
+    font-weight: bold;
+  }
+  th.sorttable_numeric {
+    text-decoration: underline;
+    border-color: blue;
+    font-weight: bold;
+  }
+  th.sorttable_nosort_red {
+    background-color:#FFF;
+    border-style: solid;
+    border-color: blue;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; 
+    color: red;
+  }
+  th.sorttable_nosort_green {
+    background-color:#FFF;
+    border-style: solid;
+    border-color: blue;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; 
+    color: green;
+  }
+  th.sorttable_nosort {
+    background-color:#FFF;
+    border-style: solid;
+    border-color: blue;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; 
+    color: black;
+  }
+  td.tdSmallerBlueBorder {
+    background-color:#FFF;
+    border-style: solid;
+    border-color: blue;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 70%;
+    color: blue;
+  }
+  td.tdNoBorder {
+    background-color:#FFF;
+    border-style: none;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 70%;
+  }
+  .grayed_out {color: Gray;}
+#calendar
+{
+	width: 241px;
+	height: 165px;
+	text-align: center;
+	margin: 5px auto;
+	border: 1px solid Brown;
+	background-color: Tan;
+	position: absolute;
+	font: 11px Trebuchet MS;
+}
+
+ul
+{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+.months, .emptM, .headDay, .dayNormal, .dayBlank, .dayDisabled, .dayWeekend, .dayCurrent, .yearBrowse, .monthDisabled, .currMonth, #closeBtn  
+{
+	margin: 1px 0 0 1px;
+	padding: 0;
+	width: 39px;
+	height: 14px;
+	line-height: 14px;
+	float: left;
+	text-align: center;
+	background-color: LightBlue;
+	color: White;
+	display: inline;
+}
+.emptM, .dayDisabled, .monthDisabled
+{
+	color: Black;
+	background-color: DarkBlue;
+}
+.headDay
+{
+	color: White;
+	background-color: Brown;
+	width: 33px;
+}
+.dayNormal, .dayBlank, .dayWeekend, .dayCurrent
+{
+	color: Black;
+	background-color: LightBlue;
+	width: 33px;
+}
+.dayBlank{background-color: Tan}
+.dayWeekend{background-color: SkyBlue}
+.dayCurrent, .currMonth{background-color: LightYellow}
+.dayDisabled{width: 33px}
+#days{margin-left: 1px; width: 238px;}
+#elements{height: 150px;}
+.months a, #days a, .currMonth a{color: Black; text-decoration: none; display: block;}
+.currMonth a{color: Black}
+#days a{color: Black;}
+.yearBrowse, #closeBtn {width: 240px; background-color: Green; line-height: 14px;}
+.yearBrowse a, #closeBtn a{text-decoration: none; color: White; font-weight: bold;}
+.yearBrowse b{margin: 0 5px}
+-->
+  </style>
